@@ -3,6 +3,12 @@ RubySafeEval
 
 Let other people eval code on your computer safely. Useful for chatbots.
 
+Usage:
+
+    SafeEval.safeEval '1 + 1'              # => 2
+    SafeEval.safeEval '2 ** 8'             # => 256
+    SafeEval.safeEval 'system("rm -rf /")' # => "Error in eval: Insecure operation - system"
+
 Self-explanatory example:
 
     [14:20] <SafeEvalTester> >> 2 + 2
